@@ -57,7 +57,8 @@ result = 0
 
 while N != 1:
   if N%K == 0:
-    N = N/K
+    # int 로 캐스팅 하는 습관이 필요
+    N = (int)N/K
     result += 1
   else:
     N -= 1
