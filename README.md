@@ -48,3 +48,21 @@ for _ in range(N):
 
 print(result)
 ```
+# 3. 1이 될 때까지
+## 3-1. 내 코드
+```
+N, K = map(int,input().split())
+
+result = 0
+
+while N != 1:
+  if N%K == 0:
+    N = N/K
+    result += 1
+  else:
+    N -= 1
+    result += 1
+
+print(result)
+```
+
