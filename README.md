@@ -34,3 +34,17 @@ while True:
 
 print(result)
 ```
+# 2. 숫자 카드 게임
+## 2-1. 내 코드
+```
+N, M = map(int, input().split())
+
+result = 0
+
+for _ in range(N):
+  arr = list(map(int, input().split()))
+  min_val = min(arr)
+  result = max(result, min_val)
+
+print(result)
+```
