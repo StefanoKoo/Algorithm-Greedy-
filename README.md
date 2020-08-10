@@ -36,7 +36,7 @@ print(result)
 ```
 # 2. 숫자 카드 게임
 ## 2-1. 내 코드
-```
+```python
 N, M = map(int, input().split())
 
 result = 0
@@ -50,7 +50,7 @@ print(result)
 ```
 # 3. 1이 될 때까지
 ## 3-1. 내 코드
-```
+```python
 N, K = map(int,input().split())
 
 result = 0
