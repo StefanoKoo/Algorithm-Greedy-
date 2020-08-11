@@ -143,3 +143,35 @@ while True:
 
 print(count)
 ```
+# 7. 이진탐색
+## 7-1. 부품 찾기
+```python
+def binary_search(array, start, end, target):
+  if start > end:
+    return None
+  
+  mid = (start + end) // 2
+
+  if array[mid] == target:
+    return mid
+  elif array[mid] > target:
+    return binary_search(array, start, mid-1, target)
+  else:
+    return binary_search(array, mid+1, end, target)
+
+
+product_num = int(input())
+product_arr = list(map(int, input().split()))
+
+search_num = int(input())
+search_list = list(map(int, input().split()))
+
+product_arr.sort()
+
+for i in search_list:
+  result = binary_search(product_arr,0,product_num-1,i)
+  if result != None:
+    print('yes',end = ' ')
+  else:
+    print('no', end = ' ')
+```
