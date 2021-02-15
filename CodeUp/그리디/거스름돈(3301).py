@@ -1,3 +1,4 @@
+## Link : https://codeup.kr/problem.php?id=3301
 money = int(input())
 count = 0
 
