@@ -1,5 +1,5 @@
 ## Link : https://www.acmicpc.net/problem/1655
-
+## Heap
 import heapq
 
 trial = int(sys.stdin.readline())
